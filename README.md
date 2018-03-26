@@ -8,7 +8,7 @@ Coursera Python Specialization from University of Michigan
  
 
 
-### Using Python to Access Web Data  :ballot_box_with_check:
+### Using Python to Access Web Data  :hourglass:
 
 
 ### Using Databases with Python
