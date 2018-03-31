@@ -8,10 +8,10 @@ Coursera Python Specialization from University of Michigan
  
 
 
-### Using Python to Access Web Data  :hourglass:
+### Using Python to Access Web Data  :heavy_check_mark: 
 
 
-### Using Databases with Python
+### Using Databases with Python    :hourglass:
 
 
 ### Capstone: Retrieving, Processing, and Visualizing Data with Python
