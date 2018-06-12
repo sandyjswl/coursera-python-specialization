@@ -15,8 +15,8 @@ ctx.check_hostname = False
 ctx.verify_mode = ssl.CERT_NONE
 
 url = input('Enter - ')
-count=int(input("Enter count: "))
-pos=int(input('Enter position: '))
+# count=int(input("Enter count: "))
+# pos=int(input('Enter position: '))
 #html = urllib.request.urlopen(url, context=ctx).read()
 #soup = BeautifulSoup(html, 'html.parser')
 
@@ -26,20 +26,13 @@ pos=int(input('Enter position: '))
 #for tag in range(len(tags)):
 #    print(tags[2].get('href', None))
     
-for i in range(1,count+1):
-    if i==1:
-        html = urllib.request.urlopen(url, context=ctx).read()
-        soup = BeautifulSoup(html, 'html.parser')
-        tags = soup('a')
-        print("Retreiving: ",url)
-        print("Retreiving: ",tags[pos-1].get('href', None))
-        url=tags[pos-1].get('href', None)
-    else:
-        html = urllib.request.urlopen(url, context=ctx).read()
-        soup = BeautifulSoup(html, 'html.parser')
-        tags = soup('a')
-        
-        print("Retreiving: ",tags[pos-1].get('href', None))
-        url=tags[pos-1].get('href', None)
+
+html = urllib.request.urlopen(url, context=ctx).read()
+soup = BeautifulSoup(html, 'html.parser')
+tags = soup('tr')
+print(tags)
+#print("Retreiving: ",tags[pos-1].get('href', None))
+#url=tags[pos-1].get('href', None)
+
 
         
